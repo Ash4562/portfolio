@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --theme: coral;
+        }
+
+        .hero {
+            background-image: url(./im/bg.svg);
+            height: 100vh;
+            background-size: cover;
+            background-position: right bottom;
+
+        }
+
+        .hero-img {
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+        }
+
+        .ash {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            width: 35%;
+            /* width: 400px;
+            margin: 0px 300px auto;
+            padding-top: 80px;
+            padding-bottom: 20px; */
+            text-transform: capitalize;
+            color: white;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: coral;
+            justify-content: space-evenly;
+            align-items: center;
+            /* width: 75px; */
+            height: 75px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: navy;
+        }
+
+        .brand {
+            font-weight: 600;
+            color: #fff;
+            /* border-radius: 30%; */
+        }
+
+        .skill {
+            width: 80%;
+            margin: 5rem auto;
+
+        }
+
+        .progress {
+            background-color: #eee;
+            height: 2rem;
+            margin: 3rem 0;
+        }
+
+        .progress-bar {
+            background-color: var(--theme);
+            height: 100%;
+            width: 75%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .all-skill {
+            display: flex;
+            gap: 2rem;
+
+        }
+
+        .card {
+            width: 25%;
+            border: solid gray;
+        }
+
+        .card-header img {
+            max-width: 100%;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <img class="hero-img" src="./im/bg-dots.svg" alt="">
+        <img class="hero-img" src="./im/user.png" alt="">
+        <div class="ash">
+
+            <h1>Hi my Name is Ashish</h1> <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, voluptate similique. Alias, ab non.
+                Veniam
+                qui vel exercitationem enim excepturi! Repudiandae perferendis illo nesciunt animi quasi nulla obcaecati
+                rerum velit.</p><br><br>
+            <a>Hire me</a>
+        </div>
+    </div>
+
+
+    <div class="navbar">
+        <a class="brand" href="">Ashish</a>
+        <a href="">Home</a>
+        <a href="">Education</a>
+        <a href="">project</a>
+        <a href="">Experience</a>
+        <a href="">Contact</a>
+    </div>
+    <div class="all-skill">
+
+        <div class="skill">
+            <div class="progress">
+                <div class="progress-bar">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 50%;">CSS</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar">Java script</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 30%;">React</div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="progress">
+                <div class="progress-bar">HTML</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 50%;">CSS</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar">Java script</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar" style="width: 30%;">React</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="crad">
+            <div class="card-header">
+                <img src="https://images.unsplash.com/photo-1682687982167-d7fb3ed8541d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="">
+            </div>
+            <div class="card-body">
+                <h1>Todo</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                <a href=""> Visit</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 4000px;"></div>
+</body>
+
+</html>
